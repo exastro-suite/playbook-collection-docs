@@ -69,7 +69,7 @@
 
 2. ansible-galaxyコマンドでロールをダウンロードします
     ```
-    $ ansible-galaxy install -r os_scan_list.yml
+    $ ansible-galaxy install -r os_scan_list.yml -p roles
     ```
 
 3. 各ロールのreadmeを参考にPlaybookとインベントリを作成します
