@@ -58,6 +58,11 @@
         ansible_become_pass=<上記ユーザアカウントのパスワード>
         ```
 
+7. Playbook実行
+    ```
+    $ ansible-playbook -i inventory prerequire.yml
+    ```
+
 ### Playbook実行(ここではOSの情報情報収集を行う場合の例を示す)
 
 1. 利用したい機能のロールリストをダウンロードし、Playbookを作成するフォルダに配置します
@@ -86,7 +91,7 @@
         　　　：
         ```
 
-9. Playbook実行
+4. Playbook実行
     ```
     $ ansible-playbook -i inventory os_scan.yml
     ```
