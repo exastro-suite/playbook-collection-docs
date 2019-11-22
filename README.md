@@ -31,7 +31,7 @@
     $ cd ansible_work/
     ```
 
-4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します
+4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します
 
 5. ansible-galaxyコマンドでロールをダウンロードします
     ```
