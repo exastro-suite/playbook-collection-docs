@@ -1,0 +1,6 @@
+---
+- src: https://github.com/exastro-playbook-collection/OS_gathering.git
+- src: https://github.com/exastro-playbook-collection/RHEL.git
+- src: https://github.com/exastro-playbook-collection/Windows.git
+- src: https://github.com/exastro-playbook-collection/OS_extracting.git
+- src: https://github.com/exastro-playbook-collection/gathering.git
