@@ -1,7 +1,7 @@
 # Ansible Playbook Collection
 ## Description
 
-本サービスでは、Ansible Playbook のコード（Role）を公開しています。
+本サービスでは、Ansible Playbook のコード（Role）を公開しています  
 
 ## Role List
 
@@ -12,34 +12,34 @@
 
 ## Support
 
-各ロールの利用方法を参照
+各ロールの利用方法を参照  
 
 ## Usage (パラメータ生成共通部品のセットアップの例)
 
 ### 準備作業（本手順は環境構築時に一度だけ実行）
 
-1. Ansibleサーバーを構築し、sudo権限を付与したユーザでログインします
-以降の手順は特に明記の無い限りAnsibleサーバー上で操作を行います
+1. Ansibleサーバーを構築し、sudo権限を付与したユーザでログインします  
+以降の手順は特に明記の無い限りAnsibleサーバー上で操作を行います  
 
-2. gitをインストールします
+2. gitをインストールします  
     ```
     $ sudo yum -y install git
     ```
 
-3. Playbook実行フォルダを作成し、フォルダ下に移動します。
+3. Playbook実行フォルダを作成し、フォルダ下に移動します  
     ```
     $ mkdir ansible_work
     $ cd ansible_work/
     ```
 
-4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します
+4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します  
 
-5. ansible-galaxyコマンドでロールをダウンロードします
+5. ansible-galaxyコマンドでロールをダウンロードします  
     ```
     $ ansible-galaxy install -r prerequire_list.yml -p roles
     ```
 
-6. 以下を参考にPlaybookとインベントリを作成します
+6. 以下を参考にPlaybookとインベントリを作成します  
     * Playbook(prerequire.yml)
         ```
         ---
@@ -57,29 +57,29 @@
         ansible_become_pass=<sudoパスワード>
         ```
 
-7. Playbook実行
+7. Playbookを実行します  
     ```
     $ ansible-playbook -c local -i inventory prerequire.yml
     ```
 
 ### Playbook実行(ここではOSの情報情報収集を行う場合の例を示す)
 
-1. 利用したい機能のロールリストをダウンロードし、Playbookを作成するフォルダに配置します
+1. 利用したい機能のロールリストをダウンロードし、Playbookを作成するフォルダに配置します  
 
-2. ansible-galaxyコマンドでロールをダウンロードします
+2. ansible-galaxyコマンドでロールをダウンロードします  
     ```
     $ ansible-galaxy install -r os_scan_list.yml -p roles
     ```
 
-3. 各ロールのreadmeを参考にPlaybookとインベントリを作成します
-    * os_scan.yml(Playbook)
+3. 各ロールのreadmeを参考にPlaybookとインベントリを作成します  
+    * Playbook(os_scan.yml)
         ```
         ---
         - hosts: <ターゲットグループ名>
           roles:
         　　　：
         ```
-    * inventory(インベントリ)
+    * インベントリ(inventory)
         ```
         [<ターゲットグループ名>]
         xxx.xxx.xxx.xxx
@@ -90,7 +90,7 @@
         　　　：
         ```
 
-4. Playbook実行
+4. Playbookを実行します  
     ```
     $ ansible-playbook -i inventory os_scan.yml
     ```
