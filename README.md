@@ -18,14 +18,15 @@
 
 ### 準備作業（本手順は環境構築時に一度だけ実行）
 
-1. Ansibleサーバーを構築します
+1. Ansibleサーバーを構築し、sudo権限を付与したユーザでログインします
+以降の手順は特に明記の無い限りAnsibleサーバー上で操作を行います
 
-2. AnsibleサーバーにGit Clientをインストールします
+2. gitをインストールします
     ```
     $ sudo yum -y install git
     ```
 
-3. Ansibleサーバー上のPlaybookを作成するフォルダに移動します。
+3. Playbook実行フォルダを作成し、フォルダ下に移動します。
     ```
     $ mkdir ansible_work
     $ cd ansible_work/
@@ -39,28 +40,26 @@
     ```
 
 6. 以下を参考にPlaybookとインベントリを作成します
-    * prerequire.yml(Playbook)
+    * Playbook(prerequire.yml)
         ```
         ---
-        - hosts: ansible
+        - hosts: local
           become: yes
           roles:
             - setup_paragen
         ```
-    * inventory(インベントリ)
+    * インベントリ(inventory)
         ```
-        [ansible]
+        [local]
         localhost
 
-        [ansible:vars]
-        ansible_user=<sudo権限を持つユーザアカウント>
-        ansible_password=<上記ユーザアカウントのパスワード>
-        ansible_become_pass=<上記ユーザアカウントのパスワード>
+        [local:vars]
+        ansible_become_pass=<sudoパスワード>
         ```
 
 7. Playbook実行
     ```
-    $ ansible-playbook -i inventory prerequire.yml
+    $ ansible-playbook -c local -i inventory prerequire.yml
     ```
 
 ### Playbook実行(ここではOSの情報情報収集を行う場合の例を示す)
