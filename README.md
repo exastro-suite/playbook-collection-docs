@@ -7,8 +7,8 @@
 
 | 対象製品 | バージョン | 機能 | ロールリスト | 機能概要 | 利用方法 | 備考 |
 |---- |---- |---- |---- |---- |---- |---- |
-| OS  | WS2016, RHEL7 | 環境構築 | [os_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_setup_list.yml) |OSの環境構築、設定変更を行う|[Readme](https://github.com/exastro-playbook-collection/RHEL/blob/master/README.md) | |
-| OS  | WS2016, RHEL7 | 設定収集 | [os_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_scan_list.yml) |OSの設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/OS_extracting/blob/master/README.md) | |
+| OS  | WS2016, RHEL7 | 環境構築 | [os_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_setup_list.yml) |OSの環境構築、設定変更を行う|[Readme](https://github.com/exastro-playbook-collection/RHEL) | |
+| OS  | WS2016, RHEL7 | 設定収集 | [os_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_scan_list.yml) |OSの設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/OS_extracting) | |
 
 ## Support
 
@@ -57,7 +57,7 @@
         ansible_become_pass=<sudoパスワード>
         ```
 
-7. Playbookを実行します  
+7. Playbookを実行してパラメータ生成用共通部品をインストールします  
     ```
     $ ansible-playbook -c local -i inventory prerequire.yml
     ```
@@ -90,7 +90,7 @@
         　　　：
         ```
 
-4. Playbookを実行します  
+4. Playbookを実行してOSの情報情報収集を行います  
     ```
     $ ansible-playbook -i inventory os_scan.yml
     ```
