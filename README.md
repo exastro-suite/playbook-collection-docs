@@ -1,45 +1,52 @@
 # Ansible Playbook Collection
+
+English | [日本語](README.ja.md)
+
 ## Description
 
-本サービスでは、Ansible Playbook のコード（Role）を公開しています  
+This service publishes Ansible Playbook code (Role).  
 
 ## Role List
 
-| 対象製品 | バージョン | 機能 | ロールリスト | 機能概要 | 利用方法 | 備考 |
+| Target Product | Version | Functionality | Role List | Summary | How to use | Remarks |
 |---- |---- |---- |---- |---- |---- |---- |
-| OS  | WS2016, RHEL7 | 環境構築 | [os_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_setup_list.yml) |OSの環境構築、設定変更を行う|[Readme](https://github.com/exastro-playbook-collection/RHEL) | |
-| OS  | WS2016, RHEL7 | 設定収集 | [os_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_scan_list.yml) |OSの設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/OS_extracting) | |
+| OS  | WS2016, RHEL7 | environmental construction | [os_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_setup_list.yml) |This role provides functions to build the OS environment and change settings.|[Readme](https://github.com/exastro-playbook-collection/RHEL) | |
+| OS  | WS2016, RHEL7 | setting value collection | [os_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_scan_list.yml) |This role provides the ability to collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS_extracting) | |
 
 ## Support
 
-各ロールの利用方法を参照  
+See "How to use" for each role.  
 
-## Usage (パラメータ生成共通部品のセットアップの例)
+## Usage
 
-### 準備作業（本手順は環境構築時に一度だけ実行）
+An example of OS configuration collection is shown below.  
 
-1. Ansibleサーバーを構築し、sudo権限を付与したユーザでログインします  
-以降の手順は特に明記の無い限りAnsibleサーバー上で操作を行います  
+### Pre-work
 
-2. gitをインストールします  
+Perform this procedure only once when building the environment.  
+The following steps will be performed on the Ansible server unless otherwise specified.
+
+1. Build the Ansible server and log in as a user with sudo privileges.  
+
+2. Install git.  
     ```
     $ sudo yum -y install git
     ```
 
-3. Playbook実行フォルダを作成し、フォルダ下に移動します  
+3. Create a Playbook executable folder and move it under the folder.  
     ```
     $ mkdir ansible_work
     $ cd ansible_work/
     ```
 
-4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します  
+4. Download the [Role List for Parameter Generation Common Parts](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml) and place it in the folder you created in step (3).  
 
-5. ansible-galaxyコマンドでロールをダウンロードします  
+5. Download a Role with the ansible-galaxy Command.  
     ```
     $ ansible-galaxy install -r prerequire_list.yml -p roles
     ```
 
-6. 以下を参考にPlaybookとインベントリを作成します  
+6. Make Playbook and Inventory referring to the following.  
     * Playbook(prerequire.yml)
         ```
         ---
@@ -48,49 +55,49 @@
           roles:
             - setup_paragen
         ```
-    * インベントリ(inventory)
+    * Inventory(inventory)
         ```
         [local]
         localhost
 
         [local:vars]
-        ansible_become_pass=<sudoパスワード>
+        ansible_become_pass=<sudo password>
         ```
 
-7. Playbookを実行してパラメータ生成用共通部品をインストールします  
+7. Run Playbook to install common parts for parameter generation.  
     ```
     $ ansible-playbook -c local -i inventory prerequire.yml
     ```
 
-### Playbook実行(ここではOSの情報情報収集を行う場合の例を示す)
+### Run Playbook
 
-1. 利用したい機能のロールリストをダウンロードし、Playbookを作成するフォルダに配置します  
+1. Download the roll list of the functions you want to use and place it in the folder where you want to create Playbook.  
 
-2. ansible-galaxyコマンドでロールをダウンロードします  
+2. Download a Role with the ansible-galaxy Command.  
     ```
     $ ansible-galaxy install -r os_scan_list.yml -p roles
     ```
 
-3. 各ロールのreadmeを参考にPlaybookとインベントリを作成します  
+3. Create Playbook and inventory with reference to "How to use" for each role.  
     * Playbook(os_scan.yml)
         ```
         ---
-        - hosts: <ターゲットグループ名>
+        - hosts: <Target Group Name>
           roles:
         　　　：
         ```
-    * インベントリ(inventory)
+    * Inventory(inventory)
         ```
-        [<ターゲットグループ名>]
+        [<Target Group Name>]
         xxx.xxx.xxx.xxx
 
-        [<ターゲットグループ名>:vars]
-        ansible_user=<sudo権限を持つユーザアカウント>
-        ansible_password=<上記ユーザアカウントのパスワード>
+        [<Target Group Name>:vars]
+        ansible_user=<user with sudo privileges>
+        ansible_password=<password for the above user account>
         　　　：
         ```
 
-4. Playbookを実行してOSの情報情報収集を行います  
+4. Run Playbook to collect information about the OS.  
     ```
     $ ansible-playbook -i inventory os_scan.yml
     ```
