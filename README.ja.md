@@ -1,4 +1,4 @@
-# Ansible Playbook Collection
+﻿# Ansible Playbook Collection
 
 [English](README.md) | 日本語
 
@@ -10,12 +10,19 @@
 
 | 対象製品 | バージョン | 機能 | ロールリスト | 機能概要 | 利用方法 | 備考 |
 |---- |---- |---- |---- |---- |---- |---- |
-| OS  | WS2016, RHEL7 | 環境構築 | [os_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_setup_list.yml) |OSの環境構築、設定変更を行う|[Readme](https://github.com/exastro-playbook-collection/RHEL) | |
-| OS  | WS2016, RHEL7 | 設定収集 | [os_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_scan_list.yml) |OSの設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/OS_extracting) | |
+| OS | WS2016, RHEL7 | 環境構築 | [os_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_setup_list.yml) |OSの環境構築、設定変更を行う|[Readme](https://github.com/exastro-playbook-collection/RHEL) | |
+| OS | WS2016, RHEL7 | 設定収集 | [os_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os_scan_list.yml) |OSの設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/OS_extracting) | |
+| Apache 2.4 | RHEL7 | 環境構築 | [apache24_linux_setup_list .yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_linux_setup_list.yml) |Apache 2.4のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Apache_install)| |
+| Apache 2.4 | WS2016| 環境構築 | [apache24_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_windows_setup_list.yml) |Apache 2.4のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Apache24_WIN_install)| |
+| Apache 2.4 | WS2016, RHEL7 | 設定収集 | [apache24_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_scan_list.yml) |Apache 2.4の設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/Apache24_extracting_linux) | |
+| IIS | WS2016 | 環境構築 | [iis_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_setup_list.yml) |IISのインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/IIS_Install)| |
+| IIS | WS2016 | 設定収集 | [iis_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_scan_list.yml) |IISの設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/IIS_WS2016_extracting)| |
+| SQL Server | WS2016 | 環境構築 | [sql_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/sql_setup_list.yml) |SQL Serverのインストール前の環境チェック、準備、インストールを行う|[Readme](https://github.com/exastro-playbook-collection/SqlServer_preinstall)| |
+
 
 ## Support
 
-各ロールの利用方法を参照  
+各ロールの利用方法を参照
 
 ## Usage
 

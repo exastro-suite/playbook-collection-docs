@@ -1,0 +1,4 @@
+---
+- src: https://github.com/exastro-playbook-collection/Apache24_WIN_install.git
+- src: https://github.com/exastro-playbook-collection/Apache24_WIN_ossetup.git
+- src: https://github.com/exastro-playbook-collection/Apache24_WIN_setup.git
