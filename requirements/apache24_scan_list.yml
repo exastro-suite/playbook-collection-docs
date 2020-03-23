@@ -3,3 +3,4 @@
 - src: https://github.com/exastro-playbook-collection/Apache24_extracting_windows.git
 - src: https://github.com/exastro-playbook-collection/Apache24_gathering_linux.git
 - src: https://github.com/exastro-playbook-collection/Apache24_gathering_windows.git
+- src: https://github.com/exastro-playbook-collection/gathering.git
