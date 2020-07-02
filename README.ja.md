@@ -21,6 +21,7 @@
 | Zabbix Agent 4.0 | RHEL6,7 | 環境構築 | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Zabbix Agent 4.0(RHEL6,7)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
 | Zabbix Agent 4.0 | WS2012R2,2016 | 環境構築 | [zabbix40_agent_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_windows_setup_list.yml) |Zabbix Agent 4.0(WS2012R2,2016)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install)| |
 | Zabbix Server 4.0 | RHEL7 | 環境構築 | [zabbix40_server_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_server_linux_setup_list.yml) |Zabbix Server 4.0(RHEL7)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Server_install)| |
+| Zabbix Agent 4.0  Zabbix Server 4.0 | RHEL6,7  WS2012R2,2016 | 設定収集 | [zabbix40_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_scan_list.yml) |Zabbix Agent 4.0(RHEL6,7),(WS2012R2,2016) と Zabbix Server 4.0(RHEL7)の設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_linux)| |
 
 ## Support
 

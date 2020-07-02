@@ -21,6 +21,7 @@ This site provides Ansible Playbooks (Roles).
 | Zabbix Agent 4.0 | RHEL6,7 | application setup | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Install and configure Zabbix Agent 4.0 on RHEL6 or 7.|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
 | Zabbix Agent 4.0 | WS2012R2,2016 | application setup | [zabbix40_agent_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_windows_setup_list.yml) |Install and configure Zabbix Agent 4.0 on WS2012R2 or 2016)|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install)| |
 | Zabbix Server 4.0 | RHEL7 | application setup | [zabbix40_server_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_server_linux_setup_list.yml) |Install and configure Zabbix Server 4.0 on RHEL7|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Server_install)| |
+| Zabbix Agent 4.0  Zabbix Server 4.0 | RHEL6,7  WS2012R2,2016 | parameter collection | [zabbix40_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_scan_list.yml) |Collect Zabbix Agent 4.0(RHEL6,7), (WS2012R2,2016) and Zabbix Server 4.0(RHEL7) settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_linux)| |
 
 
 ## Support
