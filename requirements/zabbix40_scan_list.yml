@@ -1,0 +1,8 @@
+---
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_linux.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_windows.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_gathering_linux.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_gathering_windows.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Server_extracting_linux.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Server_gathering_linux.git
+- src: https://github.com/exastro-playbook-collection/gathering.git
