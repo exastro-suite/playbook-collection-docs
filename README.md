@@ -20,6 +20,8 @@ This site provides Ansible Playbooks (Roles).
 | IIS | WS2019 | application setup | [iis_ws2019_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_ws2019_setup_list.yml) |Install and configure IIS on WS2019.|[Readme](https://github.com/exastro-playbook-collection/IIS_WS2019_Install)| |
 | IIS | WS2019 | parameter collection | [iis_ws2019_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_ws2019_scan_list.yml) |Collect IIS settings and create a reusable parameter file on WS2019.|[Readme](https://github.com/exastro-playbook-collection/IIS_WS2019_extracting)| |
 | SQL Server | WS2016 | application setup | [sql_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/sql_setup_list.yml) |Check and prepare an environment, and Install SQL Server.|[Readme](https://github.com/exastro-playbook-collection/SqlServer_preinstall)| |
+| Zabbix Agent 4.0 | RHEL6,7 | application setup | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Install and configure Zabbix Agent 4.0 on RHEL6 or 7.|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
+
 
 ## Support
 

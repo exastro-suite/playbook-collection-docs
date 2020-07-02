@@ -20,7 +20,7 @@
 | IIS | WS2019 | 環境構築 | [iis_ws2019_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_ws2019_setup_list.yml) |IIS(WS2019)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/IIS_WS2019_Install)| |
 | IIS | WS2019 | 設定収集 | [iis_ws2019_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_ws2019_scan_list.yml) |IIS(WS2019)の設定値を収集し、再利用可能なパラメータファイルを作成する|[Readme](https://github.com/exastro-playbook-collection/IIS_WS2019_extracting)| |
 | SQL Server | WS2016 | 環境構築 | [sql_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/sql_setup_list.yml) |SQL Serverのインストール前の環境チェック、準備、インストールを行う|[Readme](https://github.com/exastro-playbook-collection/SqlServer_preinstall)| |
-
+| Zabbix Agent 4.0 | RHEL6,7 | 環境構築 | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Zabbix Agent 4.0(RHEL6,7)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
 
 ## Support
 
