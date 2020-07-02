@@ -1,0 +1,6 @@
+---
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_register.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_ossetup.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_setup.git
+- src: https://github.com/exastro-playbook-collection/gathering.git
