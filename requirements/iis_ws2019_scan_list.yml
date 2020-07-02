@@ -1,0 +1,4 @@
+---
+- src: https://github.com/exastro-playbook-collection/IIS_WS2019_extracting.git
+- src: https://github.com/exastro-playbook-collection/IIS_WS2019_gathering.git
+- src: https://github.com/exastro-playbook-collection/gathering.git

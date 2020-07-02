@@ -1,0 +1,3 @@
+---
+- src: https://github.com/exastro-playbook-collection/IIS_WS2019_Install.git
+- src: https://github.com/exastro-playbook-collection/IIS_WS2019_Setup.git
