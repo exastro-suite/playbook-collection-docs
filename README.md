@@ -20,6 +20,7 @@ This site provides Ansible Playbooks (Roles).
 | SQL Server | WS2016 | application setup | [sql_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/sql_setup_list.yml) |Check and prepare an environment, and Install SQL Server.|[Readme](https://github.com/exastro-playbook-collection/SqlServer_preinstall)| |
 | Zabbix Agent 4.0 | RHEL6,7 | application setup | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Install and configure Zabbix Agent 4.0 on RHEL6 or 7.|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
 | Zabbix Agent 4.0 | WS2012R2,2016 | application setup | [zabbix40_agent_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_windows_setup_list.yml) |Install and configure Zabbix Agent 4.0 on WS2012R2 or 2016)|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install)| |
+| Zabbix Server 4.0 | RHEL7 | application setup | [zabbix40_server_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_server_linux_setup_list.yml) |Install and configure Zabbix Server 4.0 on RHEL7|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Server_install)| |
 
 
 ## Support

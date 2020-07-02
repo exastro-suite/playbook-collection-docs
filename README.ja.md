@@ -20,7 +20,7 @@
 | SQL Server | WS2016 | 環境構築 | [sql_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/sql_setup_list.yml) |SQL Serverのインストール前の環境チェック、準備、インストールを行う|[Readme](https://github.com/exastro-playbook-collection/SqlServer_preinstall)| |
 | Zabbix Agent 4.0 | RHEL6,7 | 環境構築 | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Zabbix Agent 4.0(RHEL6,7)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
 | Zabbix Agent 4.0 | WS2012R2,2016 | 環境構築 | [zabbix40_agent_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_windows_setup_list.yml) |Zabbix Agent 4.0(WS2012R2,2016)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install)| |
-
+| Zabbix Server 4.0 | RHEL7 | 環境構築 | [zabbix40_server_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_server_linux_setup_list.yml) |Zabbix Server 4.0(RHEL7)のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Server_install)| |
 
 ## Support
 
