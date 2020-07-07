@@ -1,0 +1,4 @@
+---
+- src: https://github.com/exastro-playbook-collection/Nginx_extracting.git
+- src: https://github.com/exastro-playbook-collection/Nginx_gathering.git
+- src: https://github.com/exastro-playbook-collection/gathering.git

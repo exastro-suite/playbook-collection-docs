@@ -1,0 +1,4 @@
+---
+- src: https://github.com/exastro-playbook-collection/Nginx_Install.git
+- src: https://github.com/exastro-playbook-collection/Nginx_Setup.git
+- src: https://github.com/exastro-playbook-collection/Nginx_OSSetup.git
