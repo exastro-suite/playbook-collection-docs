@@ -51,6 +51,9 @@ The following steps will be executed on Ansible server unless otherwise specifie
     ```
 
 4. Download the [Role List for Parameter Generation Common Parts](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml) and place it in the folder you created in step (3).  
+    ```
+    wget https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml
+    ```
 
 5. Download a role with the ansible-galaxy Command.  
     ```
@@ -72,8 +75,10 @@ The following steps will be executed on Ansible server unless otherwise specifie
         localhost
 
         [local:vars]
+        ansible_python_interpreter=/usr/bin/python3
         ansible_become_pass=<sudo password>
         ```
+        (*) You don't have to set the variable 'ansible_python_interpreter' if use ansible with python2.  
 
 7. Run the playbook to install Parameter Generation Common Parts.
     ```
