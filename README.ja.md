@@ -53,6 +53,9 @@
     ```
 
 4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します  
+    ```
+    wget https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml
+    ```
 
 5. ansible-galaxyコマンドでロールをダウンロードします  
     ```
@@ -74,8 +77,10 @@
         localhost
 
         [local:vars]
+        ansible_python_interpreter=/usr/bin/python3
         ansible_become_pass=<sudoパスワード>
         ```
+        (*) AnsibleをPython2で動作させる場合、ansible_python_interpreterの定義は不要
 
 7. Playbookを実行してパラメータ生成用共通部品をインストールします  
     ```
