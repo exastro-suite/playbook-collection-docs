@@ -43,13 +43,13 @@
 
 2. gitをインストールします  
     ```
-    $ sudo yum -y install git
+    sudo yum -y install git
     ```
 
 3. Playbook実行フォルダを作成し、フォルダ下に移動します  
     ```
-    $ mkdir ansible_work
-    $ cd ansible_work/
+    mkdir ansible_work
+    cd ansible_work/
     ```
 
 4. [パラメータ生成共通部品のロールリスト](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します  
@@ -59,7 +59,7 @@
 
 5. ansible-galaxyコマンドでロールをダウンロードします  
     ```
-    $ ansible-galaxy install -r prerequire_list.yml -p roles
+    ansible-galaxy install -r prerequire_list.yml -p roles
     ```
 
 6. 以下を参考にPlaybookとインベントリを作成します  
@@ -84,16 +84,19 @@
 
 7. Playbookを実行してパラメータ生成用共通部品をインストールします  
     ```
-    $ ansible-playbook -c local -i inventory prerequire.yml
+    ansible-playbook -c local -i inventory prerequire.yml
     ```
 
-### Playbook実行
+### Playbook実行（Windows Server 2016 OS情報収集の例）
 
 1. 利用したい機能のロールリストをダウンロードし、Playbookを作成するフォルダに配置します  
+    ```
+    wget https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2016_list.yml
+    ```
 
 2. ansible-galaxyコマンドでロールをダウンロードします  
     ```
-    $ ansible-galaxy install -r os_scan_list.yml -p roles
+    ansible-galaxy install -p roles -r os2_ws2016_list.yml
     ```
 
 3. 各ロールのreadmeを参考にPlaybookとインベントリを作成します  
@@ -102,7 +105,8 @@
         ---
         - hosts: <ターゲットグループ名>
           roles:
-        　　　：
+            - OS-Windows2016/WIN_ALL/OS_gathering
+          　　　：
         ```
     * インベントリ(inventory)
         ```
@@ -117,5 +121,5 @@
 
 4. Playbookを実行してOSの情報情報収集を行います  
     ```
-    $ ansible-playbook -i inventory os_scan.yml
+    ansible-playbook -i inventory os_scan.yml
     ```
