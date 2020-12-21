@@ -41,13 +41,13 @@ The following steps will be executed on Ansible server unless otherwise specifie
 
 2. Install git.  
     ```
-    $ sudo yum -y install git
+    sudo yum -y install git
     ```
 
 3. Create a working folder and change to the folder.  
     ```
-    $ mkdir ansible_work
-    $ cd ansible_work/
+    mkdir ansible_work
+    cd ansible_work/
     ```
 
 4. Download the [Role List for Parameter Generation Common Parts](https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml) and place it in the folder you created in step (3).  
@@ -57,7 +57,7 @@ The following steps will be executed on Ansible server unless otherwise specifie
 
 5. Download a role with the ansible-galaxy Command.  
     ```
-    $ ansible-galaxy install -r prerequire_list.yml -p roles
+    ansible-galaxy install -r prerequire_list.yml -p roles
     ```
 
 6. Create a playbook and an inventory file.  
@@ -82,16 +82,19 @@ The following steps will be executed on Ansible server unless otherwise specifie
 
 7. Run the playbook to install Parameter Generation Common Parts.
     ```
-    $ ansible-playbook -c local -i inventory prerequire.yml
+    ansible-playbook -c local -i inventory prerequire.yml
     ```
 
 ### Run Playbook
 
 1. Download the roll list of the functions you want to use and place it in the folder where you want to create Playbook.  
+    ```
+    wget https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2016_list.yml
+    ```
 
 2. Download a role with the ansible-galaxy Command.  
     ```
-    $ ansible-galaxy install -r os_scan_list.yml -p roles
+    ansible-galaxy install -p roles -r os2_ws2016_list.yml
     ```
 
 3. Create a playbook and an inventory file referencing "How to use" of each role.  
@@ -100,7 +103,8 @@ The following steps will be executed on Ansible server unless otherwise specifie
         ---
         - hosts: <Target Group Name>
           roles:
-        　　　：
+            - OS-Windows2016/WIN_ALL/OS_gathering
+                :
         ```
     * Inventory(inventory)
         ```
@@ -110,10 +114,10 @@ The following steps will be executed on Ansible server unless otherwise specifie
         [<Target Group Name>:vars]
         ansible_user=<user with sudo privileges>
         ansible_password=<password for the above user account>
-        　　　：
+                :
         ```
 
 4. Run the playbook to collect OS settings.  
     ```
-    $ ansible-playbook -i inventory os_scan.yml
+    ansible-playbook -i inventory os_scan.yml
     ```
