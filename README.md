@@ -1,6 +1,6 @@
 # Ansible Playbook Collection
 
-English | [日本語](README.ja.md)
+English | [Japanese](README.ja.md)
 
 ## Description
 
@@ -10,6 +10,8 @@ This site provides Ansible Playbooks (Roles).
 
 | Target Product | Version | Function | Role List | Summary | How to use | Remarks |
 |---- |---- |---- |---- |---- |---- |---- |
+| OS  | WS2019 | environmental construction & parameter collection | [os2_ws2019_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2019_list.yml) |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md) | |
+| OS  | RHEL8  | environmental construction & parameter collection | [os2_rhel8_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_rhel8_list.yml)   |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL8/blob/master/README.md) | |
 | OS  | WS2016 | environmental construction & parameter collection | [os2_ws2016_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2016_list.yml) |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2016/blob/master/README.md) | |
 | OS  | RHEL7  | environmental construction & parameter collection | [os2_rhel7_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_rhel7_list.yml)   |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL7/blob/master/README.md) | |
 | Apache 2.4 | RHEL7 | application setup | [apache24_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_linux_setup_list.yml) |Install and configure Apache 2.4 on RHEL. |[Readme](https://github.com/exastro-playbook-collection/Apache_install)| |

@@ -1,0 +1,3 @@
+---
+- src: https://github.com/exastro-playbook-collection/OS-Windows2019.git
+- src: https://github.com/exastro-playbook-collection/gathering.git

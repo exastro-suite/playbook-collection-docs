@@ -10,6 +10,8 @@
 
 | 対象製品 | バージョン | 機能 | ロールリスト | 機能概要 | 利用方法 | 備考 |
 |---- |---- |---- |---- |---- |---- |---- |
+| OS  | WS2019 | 環境構築 ＆ 設定収集 | [os2_ws2019_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2019_list.yml) |OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md) | |
+| OS  | RHEL8  | 環境構築 ＆ 設定収集 | [os2_rhel8_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_rhel8_list.yml)   |OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL8/blob/master/README.md) | |
 | OS  | WS2016 | 環境構築 ＆ 設定収集 | [os2_ws2016_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2016_list.yml) |OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2016/blob/master/README.md) | |
 | OS  | RHEL7  | 環境構築 ＆ 設定収集 | [os2_rhel7_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_rhel7_list.yml)   |OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL7/blob/master/README.md) | |
 | Apache 2.4 | RHEL7 | 環境構築 | [apache24_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_linux_setup_list.yml) |Apache 2.4のインストール、環境構築を行う|[Readme](https://github.com/exastro-playbook-collection/Apache_install)| |
