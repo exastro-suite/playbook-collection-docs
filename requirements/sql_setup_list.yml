@@ -1,3 +1,3 @@
 ---
-- src: https://github.com/exastro-playbook-collection/SqlServer_preinstall.git
-- src: https://github.com/exastro-playbook-collection/SqlServer_install.git
+- src: https://github.com/exastro-playbook-collection/SqlServer_preinstall/releases/download/v20.03/SqlServer_preinstall.tar.gz
+- src: https://github.com/exastro-playbook-collection/SqlServer_install/releases/download/v20.03/SqlServer_install.tar.gz

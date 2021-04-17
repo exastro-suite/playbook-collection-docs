@@ -1,4 +1,4 @@
 ---
-- src: https://github.com/exastro-playbook-collection/Nginx_extracting.git
-- src: https://github.com/exastro-playbook-collection/Nginx_gathering.git
-- src: https://github.com/exastro-playbook-collection/gathering.git
+- src: https://github.com/exastro-playbook-collection/Nginx_extracting/releases/download/v20.06/Nginx_extracting.tar.gz
+- src: https://github.com/exastro-playbook-collection/Nginx_gathering/releases/download/v20.06/Nginx_gathering.tar.gz
+- src: https://github.com/exastro-playbook-collection/gathering/releases/download/v20.09/gathering.tar.gz

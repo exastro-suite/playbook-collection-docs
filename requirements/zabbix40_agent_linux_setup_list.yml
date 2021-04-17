@@ -1,5 +1,5 @@
 ---
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_install.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_regist.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_setup.git
-- src: https://github.com/exastro-playbook-collection/gathering.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_install/releases/download/v20.06/Zabbix40-Agent_install.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_regist/releases/download/v20.06/Zabbix40-Agent_regist.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_setup/releases/download/v20.06/Zabbix40-Agent_setup.tar.gz
+- src: https://github.com/exastro-playbook-collection/gathering/releases/download/v20.09/gathering.tar.gz

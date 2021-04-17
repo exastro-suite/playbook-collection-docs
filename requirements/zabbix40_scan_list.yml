@@ -1,8 +1,8 @@
 ---
-- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_linux.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_windows.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_gathering_linux.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_gathering_windows.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40_Server_extracting_linux.git
-- src: https://github.com/exastro-playbook-collection/Zabbix40_Server_gathering_linux.git
-- src: https://github.com/exastro-playbook-collection/gathering.git
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_linux/releases/download/v20.06/Zabbix40_Agent_extracting_linux.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_windows/releases/download/v20.06/Zabbix40_Agent_extracting_windows.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_gathering_linux/releases/download/v20.06/Zabbix40_Agent_gathering_linux.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Agent_gathering_windows/releases/download/v20.06/Zabbix40_Agent_gathering_windows.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Server_extracting_linux/releases/download/v20.06/Zabbix40_Server_extracting_linux.tar.gz
+- src: https://github.com/exastro-playbook-collection/Zabbix40_Server_gathering_linux/releases/download/v20.06/Zabbix40_Server_gathering_linux.tar.gz
+- src: https://github.com/exastro-playbook-collection/gathering/releases/download/v20.09/gathering.tar.gz
