@@ -1,31 +1,17 @@
 # Ansible Playbook Collection
 
-English | [Japanese](README.ja.md)
+English | [Japanese](README.ja.md)  
 
 ## Description
 
-This site provides Ansible Playbooks (Roles).  
+This site provides Role Packages for easy import of Ansible Playbooks (Role) with Exastro IT Automation (hereinafter referred to as ITA).  
+If you use Role with Ansible, please refer to [this page](README_ansible.md).  
 
-## Role List
+## Role Package
 
-| Target Product | Version | Function | Role List | Summary | How to use | Remarks |
-|---- |---- |---- |---- |---- |---- |---- |
-| OS  | WS2019 | environmental construction & parameter collection | [os2_ws2019_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2019_list.yml) |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md) | |
-| OS  | RHEL8  | environmental construction & parameter collection | [os2_rhel8_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_rhel8_list.yml)   |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL8/blob/master/README.md) | |
-| OS  | WS2016 | environmental construction & parameter collection | [os2_ws2016_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2016_list.yml) |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2016/blob/master/README.md) | |
-| OS  | RHEL7  | environmental construction & parameter collection | [os2_rhel7_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_rhel7_list.yml)   |This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL7/blob/master/README.md) | |
-| Apache 2.4 | RHEL7 | application setup | [apache24_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_linux_setup_list.yml) |Install and configure Apache 2.4 on RHEL. |[Readme](https://github.com/exastro-playbook-collection/Apache_install)| |
-| Apache 2.4 | WS2016| application setup | [apache24_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_windows_setup_list.yml) |Install and configure Apache 2.4 on WS2016. |[Readme](https://github.com/exastro-playbook-collection/Apache24_WIN_install)| |
-| Apache 2.4 | WS2016, RHEL7 | parameter collection | [apache24_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/apache24_scan_list.yml) |Collect Apache 2.4 settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/Apache24_extracting_linux) | |
-| IIS | WS2016 | application setup | [iis_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_setup_list.yml) |Install and configure IIS on WS2016.|[Readme](https://github.com/exastro-playbook-collection/IIS_Install)| |
-| IIS | WS2016 | parameter collection | [iis_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/iis_scan_list.yml) |Collect IIS settings and create a reusable parameter file on WS2016.|[Readme](https://github.com/exastro-playbook-collection/IIS_WS2016_extracting)| |
-| SQL Server | WS2016 | application setup | [sql_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/sql_setup_list.yml) |Check and prepare an environment, and Install SQL Server.|[Readme](https://github.com/exastro-playbook-collection/SqlServer_preinstall)| |
-| Zabbix Agent 4.0 | RHEL6,7 | application setup | [zabbix40_agent_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_linux_setup_list.yml) |Install and configure Zabbix Agent 4.0 on RHEL6 or 7.|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_install)| |
-| Zabbix Agent 4.0 | WS2012R2,2016 | application setup | [zabbix40_agent_windows_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_agent_windows_setup_list.yml) |Install and configure Zabbix Agent 4.0 on WS2012R2 or 2016)|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install)| |
-| Zabbix Server 4.0 | RHEL7 | application setup | [zabbix40_server_linux_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_server_linux_setup_list.yml) |Install and configure Zabbix Server 4.0 on RHEL7|[Readme](https://github.com/exastro-playbook-collection/Zabbix40-Server_install)| |
-| Zabbix Agent 4.0  Zabbix Server 4.0 | RHEL6,7  WS2012R2,2016 | parameter collection | [zabbix40_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/zabbix40_scan_list.yml) |Collect Zabbix Agent 4.0(RHEL6,7), (WS2012R2,2016) and Zabbix Server 4.0(RHEL7) settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/Zabbix40_Agent_extracting_linux)| |
-| Nginx | RHEL7 | application setup | [nginx_setup_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/nginx_setup_list.yml) |Install and configure Nginx on RHEL7|[Readme](https://github.com/exastro-playbook-collection/Nginx_Install)| |
-| Nginx | RHEL7 |  parameter collection | [nginx_scan_list.yml](https://exastro-suite.github.io/playbook-collection-docs/requirements/nginx_scan_list.yml) |Collect Nginx settings and create a reusable parameter file.|[Readme](https://github.com/exastro-playbook-collection/Nginx_extracting)| |
+| Target Product | Version | Function | Role Package | Summary | How to use |  
+| -------- | ---------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |  
+| OS       | WS2019     | environmental construction & parameter collection | [OS-Windows2019](https://github.com/exastro-playbook-collection/OS-Windows2019/releases/download/v21.04/OS-Windows2019.zip) | This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file. | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md)<br>[Cautionary Notes](attention/OS-Windows2019.md) |  
 
 ## Support
 
@@ -33,17 +19,23 @@ For more details, refer to "How to use" of each role.
 
 ## Usage
 
-Shown an example of OS parameter collection below.  
+This example shows how to import the WS2019 Role Package for environment setup and configuration collection into ITA and execute the role.  
+
+### Support
+
+In this case, you will work with the following configuration.  
+![system.png](attachment/system.png)
 
 ### Pre-work
 
-The following steps will be executed on Ansible server unless otherwise specified.
+This step should only be performed once for parameter collection with ITA.  
+The following steps will be executed on ITA host server unless otherwise specified.  
 
-1. Build Ansible server and login as a user with sudo privileges.
+1. Build ITA host server and login as a user with sudo privileges.  
 
-2. Install git.  
+2.  Install the required tools.  
     ```
-    sudo yum -y install git
+    sudo yum -y install git wget
     ```
 
 3. Create a working folder and change to the folder.  
@@ -82,44 +74,21 @@ The following steps will be executed on Ansible server unless otherwise specifie
         ```
         (*) You don't have to set the variable 'ansible_python_interpreter' if use ansible with python2.  
 
-7. Run the playbook to install Parameter Generation Common Parts.
+7. Run the playbook to install Parameter Generation Common Parts.  
     ```
     ansible-playbook -c local -i inventory prerequire.yml
     ```
 
-### Run Playbook
+### Run Role Package
 
-1. Download the roll list of the functions you want to use and place it in the folder where you want to create Playbook.  
-    ```
-    wget https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2016_list.yml
-    ```
+The following steps are performed on the operation terminal unless otherwise specified.  
 
-2. Download a role with the ansible-galaxy Command.  
-    ```
-    ansible-galaxy install -p roles -r os2_ws2016_list.yml
-    ```
+1. Download the target product role package from the list and store it locally.  
 
-3. Create a playbook and an inventory file referencing "How to use" of each role.  
-    * Playbook(os_scan.yml)
-        ```
-        ---
-        - hosts: <Target Group Name>
-          roles:
-            - OS-Windows2016/WIN_ALL/OS_gathering
-                :
-        ```
-    * Inventory(inventory)
-        ```
-        [<Target Group Name>]
-        xxx.xxx.xxx.xxx
+2. If there is a link for "Cautionary Notes" in the "How to use" column of the list, check the contents and take action as necessary.  
 
-        [<Target Group Name>:vars]
-        ansible_user=<user with sudo privileges>
-        ansible_password=<password for the above user account>
-                :
-        ```
-
-4. Run the playbook to collect OS settings.  
-    ```
-    ansible-playbook -i inventory os_scan.yml
-    ```
+3. After importing the role package into ITA, perform the role according to the ITA specifications.  
+  * For instructions, refer to the following in Documents.  
+    https://exastro-suite.github.io/it-automation-docs/documents.html  
+      User Instruction Manual - Ansible-driver  
+        4.1.2 Workflow of Ansible-Legacy Role  
