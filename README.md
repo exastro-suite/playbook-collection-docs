@@ -12,6 +12,7 @@ If you use Role with Ansible, please refer to [this page](README_ansible.md).
 | Target Product | Version | Function | Role Package | Summary | How to use |  
 | -------- | ---------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |  
 | OS       | WS2019     | environmental construction & parameter collection | [OS-Windows2019](https://github.com/exastro-playbook-collection/OS-Windows2019/releases/download/v21.04/OS-Windows2019.zip) | This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file. | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md)<br>[Cautionary Notes](attention/OS-Windows2019.md) |  
+| OS       | RHEL8      | environmental construction & parameter collection | [OS-RHEL8](https://github.com/exastro-playbook-collection/OS-RHEL8/releases/download/v21.04/OS-RHEL8.zip) | This role provides functions to build the OS environment and change settings and collect OS settings and create a reusable parameter file. | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL8/blob/master/README.md)<br>[Cautionary Notes](attention/OS-Windows2019.md) |  
 
 ## Support
 
