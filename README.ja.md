@@ -14,6 +14,7 @@ AnsibleでRoleを使用される場合は[こちらのページ](README_ansible.
 | OS       | WS2019     | 環境構築 ＆ 設定収集 | [OS-Windows2019](https://github.com/exastro-playbook-collection/OS-Windows2019/releases/download/v21.04/OS-Windows2019.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md)<br>[注意事項](attention/OS-Windows2019.ja.md) |  
 | OS       | WS2016     | 環境構築 ＆ 設定収集 | [OS-Windows2016](https://github.com/exastro-playbook-collection/OS-Windows2016/releases/download/v21.04/OS-Windows2016.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2016/blob/master/README.md)<br>[注意事項](attention/OS-Windows2016.ja.md) |  
 | OS       | RHEL8      | 環境構築 ＆ 設定収集 | [OS-RHEL8](https://github.com/exastro-playbook-collection/OS-RHEL8/releases/download/v21.04/OS-RHEL8.zip)                   | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL8/blob/master/README.md)<br>[注意事項](attention/OS-RHEL8.ja.md) |  
+| OS       | RHEL7      | 環境構築 ＆ 設定収集 | [OS-RHEL7](https://github.com/exastro-playbook-collection/OS-RHEL7/releases/download/v21.04/OS-RHEL7.zip)                   | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL7/blob/master/README.md)<br>[注意事項](attention/OS-RHEL7.ja.md) |  
 
 ## Support
 
