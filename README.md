@@ -1,4 +1,4 @@
-# Ansible Playbook Collection
+# Exastro Playbook Collection
 
 English | [Japanese](README.ja.md)  
 
