@@ -1,4 +1,4 @@
-# Ansible Playbook Collection
+# Exastro Playbook Collection
 
 [English](README.md) | 日本語  
 
@@ -9,7 +9,7 @@ AnsibleでRoleを使用される場合は[こちらのページ](README_ansible.
 
 ## Role Package
 
-| 対象製品 | バージョン | 機能                 | ロールパッケージ                                             | 機能概要                                                     | 利用方法                                                     |  
+| 対象製品 | Version    | 機能                 | Role Package                                                 | 機能概要                                                     | How to use                                                     |  
 | -------- | ---------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |  
 | OS       | WS2019     | 環境構築 ＆ 設定収集 | [OS-Windows2019](https://github.com/exastro-playbook-collection/OS-Windows2019/releases/download/v21.04/OS-Windows2019.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md)<br>[注意事項](attention/OS-Windows2019.ja.md) |  
 | OS       | WS2016     | 環境構築 ＆ 設定収集 | [OS-Windows2016](https://github.com/exastro-playbook-collection/OS-Windows2016/releases/download/v21.04/OS-Windows2016.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2016/blob/master/README.md)<br>[注意事項](attention/OS-Windows2016.ja.md) |  
@@ -18,7 +18,7 @@ AnsibleでRoleを使用される場合は[こちらのページ](README_ansible.
 
 ## Support
 
-各ロールパッケージの「利用方法」の「Readme」を参照ください  
+各ロールパッケージの「How to use」欄の「Readme」を参照ください  
 
 ## Usage
 
@@ -88,7 +88,7 @@ AnsibleでRoleを使用される場合は[こちらのページ](README_ansible.
 
 1. 「Role Package」一覧から対象製品のロールパッケージをダウンロードし、ローカル環境に格納します  
 
-2. 「Role Package」一覧の「利用方法」欄に「注意事項」のリンクがある場合は内容を確認し、必要に応じて対応を行ってください  
+2. 「Role Package」一覧の「How to use」欄に「注意事項」のリンクがある場合は内容を確認し、必要に応じて対応を行ってください  
 
 3. ITAにロールパッケージをインポートした後、ITAの仕様に沿ってロールの実行を行います  
 　* 作業手順については[ITAの利用手順マニュアル](https://exastro-suite.github.io/it-automation-docs/documents_ja.html)の以下を参照ください  
