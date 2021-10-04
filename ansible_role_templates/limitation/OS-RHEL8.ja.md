@@ -1,0 +1,46 @@
+# 制限事項
+
+本パッケージはTrial Versionのため、以下の制限事項があります  
+
+* 以下機能の「環境構築、設定値変更」にのみ対応しています  
+  * RH_chrony  
+  * RH_default_target  
+  * RH_directory  
+  * RH_grub2  
+  * RH_systemd  
+  * RH_cron  
+  * RH_cronconf  
+  * RH_file_access  
+  * RH_firewalld  
+  * RH_fstab  
+  * RH_group  
+  * RH_hosts  
+  * RH_hosts_allow_deny  
+  * RH_init  
+  * RH_initfunc  
+
+* インポート時にシステム管理者のアカウント情報が上書きされます  
+既存のExastro IT Automation環境には適用せず、必ず新規に作成した県境をご利用ください  
+
+* 入力用メニューに設定されているパラメーターはサンプル値のため、実環境への適用は行わないでください  
+
+* 配列として複数設定可能な変数の指定可能最大数を拡張する場合、以下手順で行ってください  
+但し、「Repeat数」は99以下、且つ「Repeat数」×「Repeatに含まれる変数の数」は200以下となるよう設定したください  
+  1. 「メニュー作成」＞「メニュー定義・管理」から対応するメニューのRepeat数を必要な値に変更します  
+  2. 「Ansible-LegacyRole」＞「変数ネスト管理」で対象変数の「最大繰り返し数」を必要な値に変更します  
+  3. 「Ansible-LegacyRole」＞「代入値自動登録設定」でメニューと変数の紐付けを行います  
+
+* 以下変数の入力可能サイズは最大8192bytesとなります  
+それ以上のデータを設定することはできませんのでご注意ください  
+
+  * RH_chrony / VAR_RH_chrony / text  
+  * RH_cron / VAR_RH_cron / text  
+  * RH_cronconf / VAR_RH_cronconf / text  
+  * RH_firewalld / VAR_RH_firewalld / text  
+  * RH_fstab / VAR_RH_fstab / text  
+  * RH_hosts / VAR_RH_hosts / text  
+  * RH_hosts_allow_deny / VAR_RH_hosts_allow_deny / text  
+  * RH_initfunc / VAR_RH_initfunc / text  
+  * RH_init / VAR_RH_init / text  
+
+* おぺレーション一覧に登録されているOperation_01というオペレーションはサンプルデータのため、新規のオペレーションを作成してご利用ください  
