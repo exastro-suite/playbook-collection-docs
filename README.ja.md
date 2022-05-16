@@ -17,11 +17,9 @@
 
 ### <a href="ansible_role_templates/README.md">Ansible Role Templates</a>
 
-> **<h3>現時点では限定的に機能を実装したTrial Versionのみの公開となります</h3>**  
-> 
 > 上記サイトではAnsible Role Templateを公開しています  
 > Ansible Role TemplateはExastro IT AutomationにAnsible Role Packageの組込みやRole実行に必要なメニュー／ジョブ等の構築などを行った上でエクスポートしたイメージファイルです  
-> 公開パッケージ(kym)をダウンロードし、Exastro IT Automationへインポートしてパラメータ設定などを行うことでロールの実行を行えます  
+> 公開パッケージ(kym)をダウンロードし、Exastro IT Automationへインポートして環境に合わせた設定を行うことでロールを実行できます  
 
 ### <a href="ansible_role_packages/README.md">Ansible Role Packages</a>
 

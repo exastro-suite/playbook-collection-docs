@@ -12,8 +12,6 @@ This service distributes Ansible Role for changing OS / MW settings and collecti
 
 ### <a href="ansible_role_templates/README.md">Ansible Role Templates</a>
 
-> **<h3>Currently, only the Trial Version with limited functions will be distributed</h3>**  
-> 
 > The above site distributes Ansible Role Template.  
 > Ansible Role Template is exported image file after embedding Ansible Role Package in Exastro IT Automation and building menus / jobs required for Role execution.  
 > You can execute roles by downloading the public package (kym), importing it into Exastro IT Automation, setting parameters, etc.
