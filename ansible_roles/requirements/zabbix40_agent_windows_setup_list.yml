@@ -1,6 +1,0 @@
----
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_install/releases/download/v20.06/Zabbix40-Agent_WIN_install.tar.gz
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_register/releases/download/v20.06/Zabbix40-Agent_WIN_register.tar.gz
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_ossetup/releases/download/v20.06/Zabbix40-Agent_WIN_ossetup.tar.gz
-- src: https://github.com/exastro-playbook-collection/Zabbix40-Agent_WIN_setup/releases/download/v20.06/Zabbix40-Agent_WIN_setup.tar.gz
-- src: https://github.com/exastro-playbook-collection/gathering/releases/download/v20.09/gathering.tar.gz

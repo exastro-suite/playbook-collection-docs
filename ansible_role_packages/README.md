@@ -10,18 +10,16 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 
 | 対象製品 | Version    | 機能                 | パッケージ(zip)                                              | 機能概要                                                     | How to use                                                     |  
 | -------- | ---------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |  
-| OS       | WS2019     | 環境構築 ＆ 設定収集 | [OS-Windows2019](https://github.com/exastro-playbook-collection/OS-Windows2019/releases/download/v21.04/OS-Windows2019.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2019/blob/master/README.md)<br>[注意事項](attention/OS-Windows2019.ja.md) |  
-| OS       | WS2016     | 環境構築 ＆ 設定収集 | [OS-Windows2016](https://github.com/exastro-playbook-collection/OS-Windows2016/releases/download/v21.04/OS-Windows2016.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2016/blob/master/README.md)<br>[注意事項](attention/OS-Windows2016.ja.md) |  
-| OS       | RHEL8      | 環境構築 ＆ 設定収集 | [OS-RHEL8](https://github.com/exastro-playbook-collection/OS-RHEL8/releases/download/v23.03/OS-RHEL8.zip)                   | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL8/blob/master/README.md)<br>[注意事項](attention/OS-RHEL8.ja.md) |  
-| OS       | RHEL7      | 環境構築 ＆ 設定収集 | [OS-RHEL7](https://github.com/exastro-playbook-collection/OS-RHEL7/releases/download/v21.04/OS-RHEL7.zip)                   | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL7/blob/master/README.md)<br>[注意事項](attention/OS-RHEL7.ja.md) |  
+| OS       | WS2022     | 環境構築 ＆ 設定収集 | [OS-Windows2019](https://github.com/exastro-playbook-collection/OS-Windows2022/releases/download/v2/OS-Windows2022.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2022/blob/master/README.md)<br>[注意事項](attention/OS-Windows2022.ja.md) |  
+| OS       | RHEL9      | 環境構築 ＆ 設定収集 | [OS-RHEL8](https://github.com/exastro-playbook-collection/OS-RHEL9/releases/download/v2/OS-RHEL9.zip)                   | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL9/blob/master/README.md)<br>[注意事項](attention/OS-RHEL9.ja.md) |  
 
 ## Support
 
-対象ホストの諸元等については「Ansible Role Package」一覧の「How to use」／「Readme」を参照ください  
+対象ホストの諸元等については「Ansible Role Package」一覧の「注意事項」を参照ください  
 
 ## Usage
 
-ここではITAにWS2019の環境構築・設定収集用Ansible Role PackageをインポートしてRoleを実行する場合の例を示します  
+ここではITAにWS2022の環境構築・設定収集用Ansible Role PackageをインポートしてRoleを実行する場合の例を示します  
 
 ### システム構成
 
@@ -34,9 +32,9 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 以降の手順は特に明記の無い限りITAホストサーバ上で実行します  
 
 1. ITAホストサーバにITAのインストールを行います  
-   * インストール手順は[「Exastro IT Automation を導入しよう」](https://exastro-suite.github.io/it-automation-docs/install_ja.html)を参照ください  
+   * インストール手順は[「Exastro IT Automation を導入しよう」](https://ita-docs.exastro.org/2.2/ja/installation/index.html)を参照ください  
 
-2. ITAホストサーバにsudo権限を付与したユーザでログインします  
+2. ITAにログインして、オーガナイゼーションおよびワークスペースを作成します
 
 3. 必要なツールをインストールします  
     ```
@@ -49,46 +47,36 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
     cd ansible_work/
     ```
 
-5. [パラメータ生成共通部品のロールリスト](../requirements/prerequire_list.yml)をダウンロードし、手順(3)で作成したフォルダに配置します  
+5. [共通部品のロールリスト](../requirements/prerequire_list.yml)をダウンロードし、手順(4)で作成したフォルダに配置します  
     ```
     wget https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml
     ```
 
-6. ansible-galaxyコマンドでロールをダウンロードします  
+6. ITAフォルダにコピー
     ```
-    ansible-galaxy install -r prerequire_list.yml -p roles
-    ```
-
-7. 以下を参考にPlaybookとインベントリを作成します  
-    * Playbook(prerequire.yml)
-        ```
-        ---
-        - hosts: local
-          become: yes
-          roles:
-            - setup_paragen
-        ```
-    * インベントリ(inventory)
-        ```
-        [local]
-        localhost
-
-        [local:vars]
-        ansible_python_interpreter=/usr/bin/python3
-        ansible_become_pass=<sudoパスワード>
-        ```
-        (*) AnsibleをPython2で動作させる場合、ansible_python_interpreterの定義は不要
-
-8. Playbookを実行してパラメータ生成用共通部品をインストールします  
-    ```
-    ansible-playbook -c local -i inventory prerequire.yml
+    cp ./parameter_generate.tar.gz /home/<ITAユーザ>/exastro-docker-compose/ita_by_ansible_execute/templates/work/
+    cp ./ita_role_adapter.tar.gz /home/<ITAユーザ>/exastro-docker-compose/ita_by_ansible_execute/templates/work/
+    
+    cd /home/<ITAユーザ>/exastro-docker-compose/ita_by_ansible_execute/templates/work
+    tar -zxvf parameter_generate.tar.gz
+    tar -zxvf ita_role_adapter.tar.gz
     ```
 
-9. 以下のように"failed=0"で終了したことを確認します  
-（failed以外の値は環境によって変わる可能性があります）
+7. 共通部品をインストール
+　　/home/<ITAユーザ>/exastro-docker-compose/ita_by_ansible_execute/templates/work/Dockfileに下記の内容を追加します。
     ```
-    PLAY RECAP *********************************************************************************
-    localhost                  : ok=4    changed=3    unreachable=0    failed=0    skipped=0 ...
+    USER root
+    
+    RUN mkdir -p /usr/share/ansible/plugins/action/
+    
+    COPY parameter_generate /home/parameter_generate
+    WORKDIR /home/parameter_generate/
+    RUN cp roles/setup_paragen/files/action_plugins/parameter_generate.py /usr/share/ansible/plugins/action/parameter_generate.py
+    RUN ansible-playbook -c local -i inventory prerequire.yml
+    
+    COPY ita_role_adapter /home/ita_role_adapter
+    WORKDIR /home/ita_role_adapter/
+    RUN ansible-playbook -c local -i inventory prerequire.yml
     ```
 
 ### ロールの実行
@@ -101,6 +89,6 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 
 3. ITAに「Ansible Role Package」をインポートした後、ITAの仕様に沿ってロールの実行を行います  
 
-* 作業手順については[ITAの利用手順マニュアル](https://exastro-suite.github.io/it-automation-docs/documents_ja.html)の以下を参照ください  
-　「利用手順マニュアル Ansible-driver」  
-　　　4.1.2 Ansible-Legacy Role 作業フロー  
+* 作業手順については[ITAの利用手順マニュアル](https://ita-docs.exastro.org/2.2/ja/manuals/index.html)の以下を参照ください  
+　「利用手順マニュアル Ansible ドライバ」  
+　　　4. Ansible-LegacyRole
