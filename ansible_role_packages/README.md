@@ -12,6 +12,8 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 | -------- | ---------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |  
 | OS       | WS2022     | 環境構築 ＆ 設定収集 | [OS-Windows2022](https://github.com/exastro-playbook-collection/OS-Windows2022/releases/download/ver.2.0.1/OS-Windows2022.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2022/blob/master/README.md)<br>[注意事項](attention/OS-WS2022.ja.md) |  
 | OS       | RHEL9      | 環境構築 ＆ 設定収集 | [OS-RHEL9](https://github.com/exastro-playbook-collection/OS-RHEL9/releases/download/ver.2.0.1/OS-RHEL9.zip)                   | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL9/blob/master/README.md)<br>[注意事項](attention/OS-RHEL9.ja.md) |  
+| Command       | WS2022     | 環境構築 ＆ 設定収集 | [OS-Windows2022](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/releases/download/ver.2.0.1/Cmd-Executor-Windows2022.zip) | 任意コマンドおよびファイルアップロードを行う | [Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/blob/master/README.md)<br>[注意事項](attention/Cmd-Executor-WS2022.ja.md) |  
+| Command       | RHEL9      | 環境構築 ＆ 設定収集 | [OS-RHEL9](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/releases/download/ver.2.0.1/Cmd-Executor-RHEL9.zip)                   | 任意コマンドおよびファイルアップロードを行う | [Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/blob/master/README.md)<br>[注意事項](attention/Cmd-Executor-RHEL9.ja.md) |  
 
 ## Support
 

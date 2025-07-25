@@ -10,6 +10,8 @@
 |---- |---- |---- |---- |---- |---- |
 | OS  | WS2022 | 環境構築 ＆ 設定収集 | [os2_ws2022_list.yml](requirements/os2_ws2022_list.yml) |OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う|[Readme](https://github.com/exastro-playbook-collection/OS-Windows2022/blob/master/README.md) |
 | OS  | RHEL9  | 環境構築 ＆ 設定収集 | [os2_rhel9_list.yml](requirements/os2_rhel9_list.yml)   |OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う|[Readme](https://github.com/exastro-playbook-collection/OS-RHEL9/blob/master/README.md) |
+| Command  | WS2022  | 環境構築 | [cmd2_ws2022_list.yml](requirements/cmd2_ws2022_list.yml)   |任意コマンドおよびファイルアップロードを行う|[Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/blob/master/README.md) |
+| Command  | RHEL9  | 環境構築 | [cmd2_rhel9_list.yml](requirements/cmd2_rhel9_list.yml)   |任意コマンドおよびファイルアップロードを行う|[Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/blob/master/README.md) |
 
 ## Support
 
@@ -63,7 +65,7 @@
 
 1. 利用したい機能のロールリストをダウンロードし、Playbookを作成するフォルダに配置します  
     ```
-    wget https://exastro-suite.github.io/playbook-collection-docs/requirements/os2_ws2022_list.yml
+    wget https://exastro-suite.github.io/playbook-collection-docs/ansible_roles/requirements/os2_ws2022_list.yml
     ```
 
 2. ansible-galaxyコマンドでロールをダウンロードします  
@@ -84,7 +86,7 @@
         ```
         [<ターゲットグループ名>]
         xxx.xxx.xxx.xxx
-
+        
         [<ターゲットグループ名>:vars]
         ansible_user=<sudo権限を持つユーザアカウント>
         ansible_password=<上記ユーザアカウントのパスワード>
