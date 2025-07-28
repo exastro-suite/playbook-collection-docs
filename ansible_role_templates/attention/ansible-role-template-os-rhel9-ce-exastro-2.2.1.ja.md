@@ -16,11 +16,16 @@
     - マッピング詳細_構築ロール
     - マッピング詳細_収集ロール
 
-2. 一部のRHEL9の収集ロール（Movement）は、デフォルトで用意しているオペレーション「RHEL9-gather-default」に収集対象が設定されています。
+2. 一部のRHEL9の収集ロール（Movement）は、デフォルトで用意しているオペレーション「RHEL9-収集-ディフォルト」に収集対象が設定されています。
 
    | ロール（Movement名）                        | パラメータシート名                        | 収集対象 | 
    | ------------------------------------------ | --------------------------------------- | --------------- | 
    | ディレクトリ設定 RHEL9_収集         | VAR_OS_gathering_dir_path                        | /var/\*<br>/home/\*<br>/usr/\*<br>/opt/\*      | 
    | ファイル設定 RHEL9_収集         | VAR_OS_gathering_file_path                        | /etc/cron.allow<br>/etc/cron.deny<br>/etc/cron.daily<br>/etc/cron.hourly<br>/etc/cron.weekly<br>/etc/cron.monthly<br>/etc/rc.d<br>/etc/security/console.apps<br>/etc/security/opasswd<br>/usr/local/bin  | 
 
-
+3. 任意コマンド実行およびファイルアップロード機能は、構築可能な件数に上限があります。上限数を超える設定値は、スキップします。
+   | ロール（Movement名）                    | 上限件数                     |
+   | --------------------------- | ------------------------ |
+   | RHEL9_構築 コマンド実行&ファイルアップロード    | 16       |
+   | RHEL9_構築 ファイルアップロード              | 16                 |
+   | RHEL9_構築 コマンド実行        | 16         |
