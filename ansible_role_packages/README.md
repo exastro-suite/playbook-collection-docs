@@ -10,10 +10,10 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 
 | 対象製品 | Version    | 機能                 | パッケージ(zip)                                              | 機能概要                                                     | How to use                                                     |
 | -------- | ---------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| OS       | WS2022     | 環境構築 ＆ 設定収集 | [OS-Windows2022](https://github.com/exastro-playbook-collection/OS-Windows2022/releases/download/ver.2.1.0/OS-Windows2022.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2022/blob/master/README.md)<br>[注意事項](attention/OS-WS2022.ja.md) |
-| OS       | RHEL9      | 環境構築 ＆ 設定収集 | [OS-RHEL9](https://github.com/exastro-playbook-collection/OS-RHEL9/releases/download/ver.2.1.0/OS-RHEL9.zip)                 | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL9/blob/master/README.md)<br>[注意事項](attention/OS-RHEL9.ja.md) |
-| Command       | WS2022     | 環境構築 ＆ 設定収集 | [Cmd-Executor-WS2022](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/releases/download/ver.2.1.0/cmd-executor-Windows2022.zip) | 任意コマンドおよびファイルアップロードを行う | [Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/blob/master/README.md)<br>[注意事項](attention/Cmd-Executor-WS2022.ja.md) |
-| Command       | RHEL9      | 環境構築 ＆ 設定収集 | [Cmd-Executor-RHEL9](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/releases/download/ver.2.1.0/cmd-executor-RHEL9.zip) | 任意コマンドおよびファイルアップロードを行う | [Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/blob/master/README.md)<br>[注意事項](attention/Cmd-Executor-RHEL9.ja.md) |
+| OS       | WS2022     | 環境構築 ＆ 設定収集 | [OS-Windows2022](https://github.com/exastro-playbook-collection/OS-Windows2022/releases/download/ver.2.2.0/OS-Windows2022.zip) | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-Windows2022/blob/master/README.md)<br>[注意事項](attention/OS-WS2022.ja.md) |
+| OS       | RHEL9      | 環境構築 ＆ 設定収集 | [OS-RHEL9](https://github.com/exastro-playbook-collection/OS-RHEL9/releases/download/ver.2.2.0/OS-RHEL9.zip)                 | OSの環境構築、設定変更、およびOS設定値収集、再利用可能なパラメータファイルの生成を行う | [Readme](https://github.com/exastro-playbook-collection/OS-RHEL9/blob/master/README.md)<br>[注意事項](attention/OS-RHEL9.ja.md) |
+| Command       | WS2022     | 環境構築 ＆ 設定収集 | [Cmd-Executor-WS2022](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/releases/download/ver.2.2.0/cmd-executor-Windows2022.zip) | 任意コマンド、任意パスにファイルのアップロード、指定したファイルおよびディレクトリのダウンロードを行う | [Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-Windows2022/blob/master/README.md)<br>[注意事項](attention/Cmd-Executor-WS2022.ja.md) |
+| Command       | RHEL9      | 環境構築 ＆ 設定収集 | [Cmd-Executor-RHEL9](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/releases/download/ver.2.2.0/cmd-executor-RHEL9.zip) | 任意コマンド、任意パスにファイルのアップロード、指定したファイルおよびディレクトリのダウンロードを行う | [Readme](https://github.com/exastro-playbook-collection/Cmd-Executor-RHEL9/blob/master/README.md)<br>[注意事項](attention/Cmd-Executor-RHEL9.ja.md) |
 
 ## Support
 
@@ -34,8 +34,9 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 以降の手順は特に明記の無い限りITAホストサーバ上で実行します  
 
 1. ITAホストサーバにITAのインストールを行います  
-   * インストール手順は[「Exastro IT Automation を導入しよう」](https://ita-docs.exastro.org/2.2/ja/installation/index.html)を参照ください  
-
+   
+* インストール手順は[「Exastro IT Automation を導入しよう」](https://ita-docs.exastro.org/ja/2.7/installation/index.html)を参照ください  
+   
 2. ITAにログインして、オーガナイゼーションおよびワークスペースを作成します
 
 3. 必要なツールをインストールします  
@@ -50,10 +51,11 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
     ```
 
 5. [共通部品のロールリスト](../requirements/prerequire_list.yml)をダウンロードし、手順(4)で作成したフォルダに配置します  
+    
     ```
     wget https://exastro-suite.github.io/playbook-collection-docs/requirements/prerequire_list.yml
-    ```
-
+```
+    
 6. ITAフォルダにコピー
     ```
     cp ./parameter_generate.tar.gz /home/<ITAユーザ>/exastro-docker-compose/ita_by_ansible_execute/templates/work/
@@ -91,6 +93,6 @@ Ansible Role PackageはAnsible Roleと依存パッケージ、Exastro IT Automat
 
 3. ITAに「Ansible Role Package」をインポートした後、ITAの仕様に沿ってロールの実行を行います  
 
-* 作業手順については[ITAの利用手順マニュアル](https://ita-docs.exastro.org/2.2/ja/manuals/index.html)の以下を参照ください  
+* 作業手順については[ITAの利用手順マニュアル](https://ita-docs.exastro.org/ja/2.7/manuals/index.html)の以下を参照ください  
 　「利用手順マニュアル Ansible ドライバ」  
-　　　4. Ansible-LegacyRole
+​   - Ansible-LegacyRole
